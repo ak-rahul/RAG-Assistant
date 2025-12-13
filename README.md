@@ -86,6 +86,17 @@ llm:
 GROQ_API_KEY=...
 OPENAI_API_KEY=...
 ```
+---
+
+## 📋 Prerequisites
+
+- Python 3.9 or higher [attached_file:1][attached_file:2]
+- Groq API key (free tier available at [console.groq.com](https://console.groq.com/))
+- 2GB disk space for vector embeddings
+- (Optional) OpenAI API key for alternative LLM
+
+---
+
 ## ⚙️ Setup
 
 ### 1. Clone the Repository
