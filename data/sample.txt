@@ -1,0 +1,32 @@
+# Artificial Intelligence and Machine Learning Overview
+
+## Introduction
+Artificial Intelligence (AI) refers to computer systems that can perform tasks 
+requiring human intelligence. Machine Learning (ML) is a subset of AI focused 
+on learning from data.
+
+## Key Concepts
+
+### Machine Learning Types
+1. Supervised Learning - Learning from labeled data
+2. Unsupervised Learning - Finding patterns in unlabeled data
+3. Reinforcement Learning - Learning through trial and error
+
+### Applications
+- Natural Language Processing (NLP): Text understanding and generation
+- Computer Vision: Image and video analysis
+- Recommendation Systems: Personalized suggestions
+- Autonomous Systems: Self-driving cars, robots
+
+## RAG Systems
+Retrieval-Augmented Generation (RAG) combines:
+- Information retrieval from knowledge bases
+- Text generation using large language models
+- Results in more accurate, grounded responses
+
+## Future Trends
+AI is evolving rapidly with advances in:
+- Large Language Models (LLMs)
+- Multimodal AI (text, image, audio)
+- Efficient model architectures
+- Ethical AI development

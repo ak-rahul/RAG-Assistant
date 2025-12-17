@@ -6,6 +6,7 @@
 [![ChromaDB](https://img.shields.io/badge/Chroma-VectorDB-orange.svg)](https://www.trychroma.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+
 A **Retrieval-Augmented Generation (RAG)** assistant for interactive document-based Question Answering.  
 Upload PDFs, DOCX, TXT, Markdown, or JSON files, and interact with them via **Streamlit UI**, **CLI**, or **FastAPI API**.
 
@@ -21,6 +22,44 @@ Upload PDFs, DOCX, TXT, Markdown, or JSON files, and interact with them via **St
 - 🖥 **Multiple interfaces**: Streamlit UI, CLI, FastAPI  
 - 📝 **Config-driven** via `config.yaml`  
 - 🔎 **Source citation** for transparency  
+
+---
+## ⚡ Quick Start (5 Minutes)
+
+1. **Clone and Install**
+```
+git clone https://github.com/ak-rahul/RAG-Assistant.git
+cd RAG-Assistant
+pip install -r requirements.txt
+```
+
+2. **Set API Key**
+```
+echo "GROQ_API_KEY=your_key_here" > .env
+```
+
+💡 Get free key at: https://console.groq.com/
+
+3. **Run the App**
+```
+python cli.py web
+```
+
+4. **Try the Sample**
+- We included `data/sample.txt` to get started
+- Ask: "What is RAG?" or "List the benefits"
+- Upload your own documents and explore!
+
+📚 More examples in [examples/](examples/)
+
+---
+## 📸 Screenshots
+
+![Upload Documents](docs/screeenshots/upload-demo.png)
+*Upload and process documents*
+
+![Ask Questions](docs/screeenshots/query-demo.png)
+*Get answers with cited sources*
 
 ---
 
@@ -77,7 +116,9 @@ ingestion:
 
 llm:
   provider: groq
-  model: gemma2-9b-it
+  model: llama-3.1-8b-instant 
+  temperature: 0.2
+  max_tokens: 512
 ```
 
 🔑 Environment overrides via .env: 
@@ -196,6 +237,31 @@ flowchart TD
 - All documents are persisted in ChromaDB inside ./.chroma
 - You can check stats (total docs, embeddings, metadata)
 - Use Clear DB to reset your database
+
+---
+
+## ❓ Troubleshooting
+
+**GROQ_API_KEY not set**  : Create .env file with your API key
+```
+echo "GROQ_API_KEY=gsk_your_key" > .env
+```
+
+**ChromaDB errors**
+```
+python cli.py clear # Clear database
+python cli.py ingest # Re-ingest documents
+```
+
+**No documents found**
+- Ensure files are in `./data` folder
+- Run `python cli.py ingest`
+
+**Slow responses**
+- Reduce `top_k` in `config.yaml` (4 → 2)
+
+**Need help?** [Open an issue](https://github.com/ak-rahul/RAG-Assistant/issues)
+
 
 ---
 
