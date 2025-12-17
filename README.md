@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="docs/images/banner.png" alt="RAG Assistant" width="600">
+  <img src="docs/images/banner.jpg" alt="RAG Assistant" width="100%">
 </div>
 
 
