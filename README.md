@@ -55,10 +55,10 @@ python cli.py web
 ---
 ## 📸 Screenshots
 
-![Upload Documents](docs/screeenshots/upload-demo.png)
+![Upload Documents](docs/screenshots/upload-demo.png)
 *Upload and process documents*
 
-![Ask Questions](docs/screeenshots/query-demo.png)
+![Ask Questions](docs/screenshots/query-demo.png)
 *Get answers with cited sources*
 
 ---
