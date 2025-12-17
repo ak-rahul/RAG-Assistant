@@ -1,4 +1,8 @@
-# 📚 RAG Assistant
+
+<div align="center">
+  <img src="docs/images/banner.png" alt="RAG Assistant" width="600">
+</div>
+
 
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-UI-FF4B4B.svg)](https://streamlit.io/)
